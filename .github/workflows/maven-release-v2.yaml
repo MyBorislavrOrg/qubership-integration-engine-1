@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Build and Publish"
-        uses: netcracker/qubership-workflow-hub/actions/maven-release@feature/315-maven-central-restrictions
+        uses: netcracker/qubership-workflow-hub/actions/maven-release@315-task-prevent-maven-artifacts-with-reversed-domain-only-in-groupid
         with:
           version-type: ${{ github.event.inputs.version-type }}
           module: ${{ github.event.repository.name }}
